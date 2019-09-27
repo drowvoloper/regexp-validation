@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>JS Form Validation</title>
+    <meta charset=utf-8>
+    <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+
+    <!-- CSS -->
+    <link rel=stylesheet href=main.css>
+  </head>
+  <body>
+    <main class="wrapper">
+    <h1>RegExp Validation Form</h1>
+    <form>
+      <p class="error-text" id="errorsOutput"></p>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="text" 
+          placeholder="First Name"
+          id="firstName"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="text"
+          placeholder="Last Name"
+          id="lastName"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="text"
+          placeholder="Username"
+          id="username"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="text"
+          placeholder="Phone number"
+          id="phoneNumber"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="text"
+          placeholder="Email"
+          id="email"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="password"
+          placeholder="Password"
+          id="password"/>
+      </div>
+      <div class="input">
+        <input
+          onchange="validation()"
+          type="password"
+          placeholder="Repeat password"
+          id="repeatPassword"/>
+      </div>
+      <button onclick="event.preventDefault()">Submit</button>
+    </form>
+    </main>
+
+    <!-- JS script -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
